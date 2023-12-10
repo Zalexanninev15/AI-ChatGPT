@@ -23,3 +23,11 @@ jobs:
 
     - name: Run Python script
       run: python get_providers.py
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add providers.txt
+        git commit -m "Обновлён файл с провайдерами (GitHub)"
+        git push

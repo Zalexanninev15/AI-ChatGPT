@@ -84,7 +84,7 @@ result = list(set(x for x in unique_urls if not any(substring in x for substring
                                                      'gpt.xeasy.me', 'bettergpt.chat', 'chat.aisoftworks.com', 'hashnode.com', 'www.typingmind.com',
                                                      'www.magicaibot.com', 'chat-shared2.zhile.io', 'home.cutim.top', 'ailink.icu'])))
 
-with open('free_chat_ai_gpt_list.txt', 'w') as file:
+with open('providers.txt', 'w') as file:
     file.write('\n'.join(result))
 
 print('Processing is complete.')
