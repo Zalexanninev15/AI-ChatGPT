@@ -5,7 +5,7 @@
 [![](https://img.shields.io/github/forks/Zalexanninev15/ai-for-all.svg)](https://github.com/Zalexanninev15/ai-for-all/network/members)
 [![](https://img.shields.io/github/issues/Zalexanninev15/ai-for-all.svg)](https://github.com/Zalexanninev15/ai-for-all/issues?q=is%3Aopen+is%3Aissue)
 [![](https://img.shields.io/github/issues-closed/Zalexanninev15/ai-for-all.svg)](https://github.com/Zalexanninev15/ai-for-all/issues?q=is%3Aissue+is%3Aclosed)
-[![](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![](https://img.shields.io/badge/license-GPLv3-ligthgreen.svg)](LICENSE)
 [![](https://img.shields.io/badge/Donate-FFDD00.svg?logo=buymeacoffee&logoColor=black)](https://zalexanninev15-donate.pfm.live/)
 
 ## Описание
@@ -28,7 +28,7 @@
 </p>
 
 2. Моя личная подборка провайдеров.
-Их я составляю вручную и проверяю каждый из них. Главные критерии - доступность и использование без сайтов-прослоек. Провайдеры беру сразу же, если сайт-прослойка, из элемента ```<frame>```, в котором они часто и распологаются. Таким образом убирается огромная доля сайтов-мошейников (просят денег за то, что бесплатно) и ненужных сайтов-прослоек.
+Их я составляю вручную и проверяю каждый из них. Главные критерии - доступность и использование без сайтов-прослоек. Некоторых провайдеров беру из сайтов-прослоек, которые хранят провайдеров для отображения, довольно часто, используя элемент ```<frame>```. Таким образом убирается огромная доля сайтов-мошейников (просят денег за то, что бесплатно) и ненужных сайтов-прослоек.
 
 <p align="center">
   <img src="/assets/2.png">
@@ -37,7 +37,7 @@
 3. Следом идут провайдеры в Telegram (пока в разработке)
 
 4. Подгружаемая страница с провайдерами с GitHub репозиториев.
-Данные для данной таблицы будут обновляться раз в 2 дня (в теории, жду первого раза). Сама таблица доступна после клика по кнопке "Развернуть список других провайдеров".
+Данные для данной таблицы будут обновляться раз в 2 дня. Сама таблица доступна после клика по кнопке "Развернуть список других провайдеров".
 
 #### Python-скрипт
 
