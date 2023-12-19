@@ -8,6 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
   <title>AI ChatGPT</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script type="text/javascript">
+    function generateBarCode() {
+      var nric = $('#text').val();
+      var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + nric + '&amp;size=50x50';
+      $('#barcode').attr('src', url);
+    }
+  </script>
   <style>
     body {
       background-color: #333;
@@ -45,6 +53,11 @@
       text-align: center;
       font-family: "Roboto", sans-serif;
       padding: 8px;
+    }
+
+    h3 {
+      margin-top: 35px;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     .spoiler {
@@ -91,16 +104,28 @@
       background-color: #424141;
     }
   </style>
-  <title>Free ChatGPT</title>
 </head>
 
 <body>
   <center>
     <div class="container">
       <p style="font-size: xx-large; font-family: Arial, Helvetica, sans-serif">
-        <b>AI ChatGPT</b><br /><tt style="font-size: smaller">Версия
-          от 10 декабря</tt>
+        <b>AI ChatGPT </b><a href="https://github.com/Zalexanninev15/AI-ChatGPT">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-github"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+        </a>
+        </svg>
+        <br>
+        <just_text style="font-size: 20px">Версия
+          от 19 декабря (v2.1)</just_text><br>
+        <just_text style="font-size: 15px">Автор сайта <a href="https://github.com/Zalexanninev15"
+            style="text-decoration: none">@Zalexanninev15</a> | <a
+            href="https://github.com/Zalexanninev15/AI-ChatGPT/blob/main/LICENSE" style="text-decoration: none">GPL-3.0
+            license</a></just_text>
       </p>
+      <h3>Альтернативные ресурсы</h3>
       <div class="list-group">
         <a href="https://www.aixploria.com/en/ultimate-list-ai/" target="_blank"><button type="button"
             class="list-group-item list-group-item-action active" aria-current="true">
@@ -133,13 +158,13 @@
             Много инструментов AI
           </button></a>
       </div>
-      <br />
+      <h3>Список провайдеров собранных автором</h3>
       <table>
         <thead>
           <tr>
             <th>Краткое описание</th>
             <th>Ссылка</th>
-            <th>Версия ChatGPT</th>
+            <th>Версия ChatGPT<br>(модель)</th>
           </tr>
         </thead>
         <tbody>
@@ -242,7 +267,8 @@
             <td>3.5/4</td>
           </tr>
           <tr>
-            <td style="text-align: left">Mobirise AI - генерация готового решения сайта по запросу</td>
+            <td style="text-align: left">Mobirise AI - генерация готового
+              решения сайта по запросу</td>
             <td style="text-align: center">
               <a href="https://ai.mobirise.com/" target="_blank">Перейти</a>
             </td>
@@ -266,9 +292,9 @@
           <tr>
             <td style="text-align: left">ChatGPT Free AI RU</td>
             <td style="text-align: center">
-              <a href="https://chatgpt-free.ai/ru" target="_blank">Перейти</a><br /><a
+              <a href="https://chatgpt-free.ai/ru" target="_blank">Перейти</a><br><a
                 href="https://ru-chatgpt.ru/chat-gpt-dlya-generacii-teksta-ot-openai/" target="_blank">2
-                способ</a><br /><a href="https://hix.ai/chat" target="_blank">Напрямую</a>
+                способ</a><br><a href="https://hix.ai/chat" target="_blank">Напрямую</a>
             </td>
             <td>3.5 и HIX.AI</td>
           </tr>
@@ -292,6 +318,13 @@
               <a href="https://chat.getgpt.world/" target="_blank">Перейти</a>
             </td>
             <td>3.5</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">Chatbot UI</td>
+            <td>
+              <a href="https://openchat.team/" target="_blank">Перейти</a>
+            </td>
+            <td>OpenChat Aura</td>
           </tr>
           <tr>
             <td style="text-align: left">Falcon-180b Demo</td>
@@ -333,7 +366,7 @@
           <tr>
             <td style="text-align: left">Чат AI GPT Unlimited</td>
             <td>
-              <a href="https://chataigpt.org/" target="_blank">Перейти</a><br /><a
+              <a href="https://chataigpt.org/" target="_blank">Перейти</a><br><a
                 href="https://chataigpt.org/chat-ai-gpt-free-1/" target="_blank">2
                 способ</a>
             </td>
@@ -349,7 +382,14 @@
           <tr>
             <td style="text-align: left">ChatGPT Online AI</td>
             <td>
-              <a href="hhttps://chat.gptonline.ai/" target="_blank">Перейти</a>
+              <a href="https://chat.gptonline.ai/" target="_blank">Перейти</a>
+            </td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">OpenChat 3.5 Playground</td>
+            <td>
+              <a href="https://huggingface.co/spaces/openchat/openchat_3.5" target="_blank">Перейти</a>
             </td>
             <td>3.5</td>
           </tr>
@@ -365,9 +405,9 @@
           <tr>
             <td style="text-align: left">Вопросы по PDF</td>
             <td style="text-align: center">
-              <a href="https://askyourpdf.com/" target="_blank">AskYourPDF</a><br /><a href="https://app.sharly.ai/"
+              <a href="https://askyourpdf.com/" target="_blank">AskYourPDF</a><br><a href="https://app.sharly.ai/"
                 target="_blank">Sharly</a>
-              <br /><a href="https://www.chatpdf.com/" target="_blank">ChatPDF</a>
+              <br><a href="https://www.chatpdf.com/" target="_blank">ChatPDF</a>
             </td>
             <td>3.5 с PDF надстройкой</td>
           </tr>
@@ -392,32 +432,266 @@
               ChatGPT.org (до 10 запросов за день)
             </td>
             <td style="text-align: center">
-              <a href="https://chatgpt.org/chat" target="_blank">Вариант 1</a><br /><a href="https://chat-gpt.org/chat"
+              <a href="https://chatgpt.org/chat" target="_blank">Вариант 1</a><br><a href="https://chat-gpt.org/chat"
                 target="_blank">Вариант 2</a>
             </td>
             <td>3.5</td>
           </tr>
+          </tr>
         </tbody>
       </table>
-      <h2 style="font-size: xx-large; font-family: Arial, Helvetica, sans-serif">Telegram провайдеры (скоро)</h2>
+      <h3>Telegram провайдеры</h3>
       <table>
         <thead>
           <tr>
             <th>Краткое описание</th>
             <th>Ссылка</th>
-            <th>Версия ChatGPT</th>
+            <th>Версия ChatGPT<br>(модель)</th>
+            <th>QR</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td style="text-align: left">
-              Пусто
+              GPT + Midjourney
             </td>
             <td>
-              Скоро
-            <td>3.5</td>
+              <a href="https://t.me/chatsgpts_bot" target="_blank">Перейти</a>
+            <td>3.5 и 4</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/chatsgpts_bot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
           </tr>
-
+          <tr>
+            <td style="text-align: left">
+              ChatGPT & Midjourney | AI bot
+            </td>
+            <td>
+              <a href="https://t.me/GPT4Telegrambot" target="_blank">Перейти</a>
+            <td>gpt-3.5-turbo-1106 и 4</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/GPT4Telegrambot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              ChatGPT-4 Official bot
+            </td>
+            <td>
+              <a href="https://t.me/AI_apps_bot" target="_blank">Перейти</a>
+            <td>3.5 Turbo и 4</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/AI_apps_bot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              ChatGPT от Нейро́нити
+            </td>
+            <td>
+              <a href="https://t.me/yyGPTbot" target="_blank">Перейти</a>
+            <td>3.5 Turbo и 4</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/yyGPTbot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              B.AI
+            </td>
+            <td>
+              <a href="https://t.me/littleb_gptBOT" target="_blank">Перейти</a><br><a href="https://t.me/TheB_AI_Bot"
+                target="_blank">2
+                способ</a>
+            <td>?</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/littleb_gptBOT&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              🔥 Бот Гена
+            </td>
+            <td>
+              <a href="https://t.me/GPT4GenaBot" target="_blank">Перейти</a><br>
+              <a href="https://t.me/GPT4GenaProBot" target="_blank">PRO (GPT4)</a>
+            <td>4 (или 3.5?)</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/GPT4GenaBot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              Суммаризатор статей по ссылке на базе YandexGPT
+            </td>
+            <td>
+              <a href="https://t.me/summary_ya_bot" target="_blank">Перейти</a>
+            <td>YandexGPT</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/summary_ya_bot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              Bard AI Google bot
+            </td>
+            <td>
+              <a href="https://t.me/bard_ai_google_bot" target="_blank">Перейти</a>
+            <td>Bard (Google)</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/bard_ai_google_bot&amp;size=100x100"
+                alt title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              Текстозавр - Генератор текстов
+            </td>
+            <td>
+              <a href="https://t.me/TextozavrBot" target="_blank">Перейти</a>
+            <td>?</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/TextozavrBot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              iSmitty GPT-3 Helper
+            </td>
+            <td>
+              <a href="https://t.me/iSmitty_bot" target="_blank">Перейти</a>
+            <td>3.5</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/iSmitty_bot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              GPT Chat bot
+            </td>
+            <td>
+              <a href="https://t.me/GPT_chat_chatgpt_bot" target="_blank">Перейти</a>
+            <td>3.5 и 4 Turbo</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/GPT_chat_chatgpt_bot&amp;size=100x100"
+                alt title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              Марти 🦓 | ChatGPT
+            </td>
+            <td>
+              <a href="https://t.me/martii_chat_bot" target="_blank">Перейти</a>
+            <td>4 (или 3.5?)</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/martii_chat_bot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              CHATGPT 4 + MIDJOURNEY НЕЙРОСЕТЬ
+            </td>
+            <td>
+              <a href="https://t.me/chat9pt_bot" target="_blank">Перейти</a>
+            <td>4 (или 3.5?)</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/chat9pt_bot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              CHATGPT Telegram
+            </td>
+            <td>
+              <a href="https://t.me/AlexCHATGPTrobot" target="_blank">Перейти</a>
+            <td>4 (или 3.5?)</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/AlexCHATGPTrobot&amp;size=100x100"
+                alt title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              ChatGPT4 | Midjourney
+            </td>
+            <td>
+              <a href="https://t.me/gpt3_unlim_chatbot" target="_blank">Перейти</a>
+            <td>3.5 Turbo и 4 turbo+vision</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/gpt3_unlim_chatbot&amp;size=100x100"
+                alt title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              ChatGPT FREE На русском
+            </td>
+            <td>
+              <a href="https://t.me/pro_ai_bot" target="_blank">Перейти</a>
+            <td>3.5</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/pro_ai_bot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: left">
+              ChatGPT | Let IT be
+            </td>
+            <td>
+              <a href="https://t.me/letbe_robot" target="_blank">Перейти</a>
+            <td>?</td>
+            </td>
+            <td>
+              <img id='qrcode'
+                src="https://api.qrserver.com/v1/create-qr-code/?data=https://t.me/letbe_robot&amp;size=100x100" alt
+                title="Telegram бот" width="75" height="75" />
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -427,11 +701,7 @@
         Получить больше провайдеров ChatGPT...
       </div>
       <div id="tableContainer" style="display: none">
-        <h2 style="font-family: Arial, Helvetica, sans-serif">
-          Список провайдеров от gpt4free &amp; awesome-free-chatgpt<br />🔄
-          Обновляемый 🔄
-        </h2>
-        <br />
+        <h3 style="margin-top: 25px;">Список провайдеров с GitHub<p style="font-size: 15px;">🔃 Обновляется автоматически раз в 2 дня 🔃</p></h3>
         <table id="botTable">
           <thead>
             <tr>
