@@ -17,7 +17,7 @@
 #### Выбор сайта (инстанты)
 
 - https://zalexanninev15.github.io/AI-ChatGPT
-- https://ai.chilledjoke.repl.co - зеркало
+- [зеркало больше недоступно]
 
 #### Описание разделов
 
