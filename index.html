@@ -107,6 +107,15 @@
 </head>
 
 <body>
+  <script>
+    var viewMode = getCookie("view-mode");
+    if (viewMode == "desktop") {
+      viewport.setAttribute('content', 'width=1024');
+    }
+    else if (viewMode == "mobile") {
+      viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+    }
+  </script>
   <center>
     <div class="container">
       <p style="font-size: xx-large; font-family: Arial, Helvetica, sans-serif">
@@ -119,7 +128,7 @@
         </svg>
         <br>
         <just_text style="font-size: 20px">Версия
-          от 7 января (v2.2)</just_text><br>
+          от 9 января (v2.2.1)</just_text><br>
         <just_text style="font-size: 15px">Автор сайта <a href="https://github.com/Zalexanninev15"
             style="text-decoration: none">@Zalexanninev15</a> | <a
             href="https://github.com/Zalexanninev15/AI-ChatGPT/blob/main/LICENSE" style="text-decoration: none">GPL-3.0
@@ -168,15 +177,6 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td style="text-align: left">
-              FreeGPT (авторский)
-            </td>
-            <td>
-              <a href="https://freegpt.chilledjoke.repl.co" target="_blank">Перейти</a>
-            </td>
-            <td>3.5</td>
-          </tr>
           <tr>
             <td style="text-align: left">
               Chad, очень хорош [Требуется авторизация, 3
