@@ -108,12 +108,29 @@
 
 <body>
   <script>
-    var viewMode = getCookie("view-mode");
-    if (viewMode == "desktop") {
-      viewport.setAttribute('content', 'width=1024');
+    function parseUA() {
+    var u = navigator.userAgent;
+    var u2 = navigator.userAgent.toLowerCase();
+    return {
+        trident: u.indexOf('Trident') > -1,
+        presto: u.indexOf('Presto') > -1,
+        webKit: u.indexOf('AppleWebKit') > -1,
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/),
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+        iPhone: u.indexOf('iPhone') > -1,
+        iPad: u.indexOf('iPad') > -1,
+        webApp: u.indexOf('Safari') == -1,
+        iosv: u.substr(u.indexOf('iPhone OS') + 9, 3),
+        weixin: u2.match(/MicroMessenger/i) == "micromessenger",
+        ali: u.indexOf('AliApp') > -1,
+    };
     }
-    else if (viewMode == "mobile") {
-      viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+    var ua = parseUA();
+    if (ua.mobile) {
+      let viewport = document.querySelector("meta[name=viewport]");
+      viewport.setAttribute('content', 'width={screenWidth}');
     }
   </script>
   <center>
@@ -128,7 +145,7 @@
         </svg>
         <br>
         <just_text style="font-size: 20px">Версия
-          от 9 января (v2.2.1)</just_text><br>
+          от 9 января (v2.2.2)</just_text><br>
         <just_text style="font-size: 15px">Автор сайта <a href="https://github.com/Zalexanninev15"
             style="text-decoration: none">@Zalexanninev15</a> | <a
             href="https://github.com/Zalexanninev15/AI-ChatGPT/blob/main/LICENSE" style="text-decoration: none">GPL-3.0
@@ -722,7 +739,7 @@
         Получить больше провайдеров ChatGPT...
       </div>
       <div id="tableContainer" style="display: none">
-        <h3 style="margin-top: 25px;">Список провайдеров с GitHub<p style="font-size: 15px;">🔃 Обновляется автоматически раз в 2 дня 🔃</p></h3>
+        <h3 style="margin-top: 25px;">Список провайдеров с GitHub<p style="font-size: 12px;">🔃 Обновляется автоматически раз в 2 дня 🔃</p></h3>
         <table id="botTable">
           <thead>
             <tr>
