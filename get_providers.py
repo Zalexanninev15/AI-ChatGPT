@@ -68,7 +68,7 @@ for url in gpt_list:
     os.remove(file_name)
 
 result = list(set(x for x in unique_urls if not any(substring in x for substring in
-                                                    ['ai.ai365.ink', 'chat.kunshanyuxin.com', 'you.com', 'bing', 'openai', 'theb',
+                                                    ['huggingface.co/chat', 'chat.kunshanyuxin.com', 'you.com', 'bing', 'openai', 'theb',
                                                      'chad', 'getgpt', 'geekgpt', 'deepai', 'chatgpt.ch', 'chatgpt-free.ai',
                                                      'onlinegpt.org', 'chataigpt.org', 'betsim', 'chat.gptonline.ai', 'perplexity.ai',
                                                      'talkai', 'chatgpt.org', 'cgs.skybyte.me', 'www.chatbase.co', 'www.aitianhu.com',
