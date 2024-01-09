@@ -22,7 +22,9 @@ import requests
 
 gpt_list = [
     'https://raw.githubusercontent.com/xtekky/gpt4free/main/README.md',
-    'https://raw.githubusercontent.com/LiLittleCat/awesome-free-chatgpt/main/README_en.md'
+    'https://raw.githubusercontent.com/LiLittleCat/awesome-free-chatgpt/main/urls.json',
+    'https://raw.githubusercontent.com/xx025/carrot/main/README.md',
+    'https://raw.githubusercontent.com/zukixa/cool-ai-stuff/main/README.md'
 ]
 
 first = True
@@ -69,20 +71,21 @@ for url in gpt_list:
 
 result = list(set(x for x in unique_urls if not any(substring in x for substring in
                                                     ['huggingface.co/chat', 'chat.kunshanyuxin.com', 'you.com', 'bing', 'openai', 'theb',
-                                                     'chad', 'getgpt', 'geekgpt', 'deepai', 'chatgpt.ch', 'chatgpt-free.ai',
+                                                     'chad', 'getgpt', 'geekgpt', 'deepai', 'chatgpt.ch', 'chatgpt-free.ai', 'favicon',
                                                      'onlinegpt.org', 'chataigpt.org', 'betsim', 'chat.gptonline.ai', 'perplexity.ai',
                                                      'talkai', 'chatgpt.org', 'cgs.skybyte.me', 'www.chatbase.co', 'www.aitianhu.com',
-                                                     'chatgpt.ai', 'powerchat.', 'p.aifree.site', 'gptgo.ai', 'ai.heptax.com',
-                                                     'hteyun.com', 'chat.pinkfong.cn', 'c.newstop.uk', 'ai.zenglingkun.cn',
-                                                     'nav4ai.net', 'coffeecat', 'chat.51buygpt.com', 'ai.mcbbs.gq', 'gptdidi.com',
+                                                     'chatgpt.ai', 'powerchat.', 'p.aifree.site', 'gptgo.ai', 'ai.heptax.com', 'carrot',
+                                                     'hteyun.com', 'chat.pinkfong.cn', 'c.newstop.uk', 'ai.zenglingkun.cn', 'poe', 'png', 'jpg',
+                                                     'nav4ai.net', 'coffeecat', 'chat.51buygpt.com', 'ai.mcbbs.gq', 'gptdidi.com', 'github',
                                                      'chat.leadscloud.xyz', 'g01.plitun.com', 'www.chatbotui.com', 'freegpt.dingtoucake.xyz'
-                                                     'academic.aiearth.dev', 'chat2.xeasy.me', 'www.chatfree.cc', 'free.netfly.top',
-                                                     'www.devgpt.com', 'a.aiask.me', 'mirrorchat.extkj.cn', 'chatyou.lovebaby.today',
+                                                     'academic.aiearth.dev', 'chat2.xeasy.me', 'www.chatfree.cc', 'free.netfly.top', 'wiki',
+                                                     'www.devgpt.com', 'a.aiask.me', 'mirrorchat.extkj.cn', 'chatyou.lovebaby.today', 'svg',
                                                      'chat1.manongzyg.one', 'chat.iwoso.co', 'freegpts1.aifree.site', 'suspended-website.com',
                                                      'nb.aitom.cc', '94gpt.com', 'www.chatgptunli.com', 'chat.newstop.asia', 'ai.azstudio.top',
                                                      'xjai.cc', 'chatgpt.kiask.xyz', 'aichat.gogpt.site', 'chatgpt.bybyte.cn', 'vvanglro.eu.org',
                                                      'gpt.xeasy.me', 'bettergpt.chat', 'chat.aisoftworks.com', 'hashnode.com', 'www.typingmind.com',
-                                                     'www.magicaibot.com', 'chat-shared2.zhile.io', 'home.cutim.top', 'ailink.icu'])))
+                                                     'www.magicaibot.com', 'chat-shared2.zhile.io', 'home.cutim.top', 'ailink.icu', 'bard.google.com',
+                                                     'discord', 'x.com', 't.me', 'file', 'static'])))
 
 with open('providers.txt', 'w') as file:
     file.write('\n'.join(result))
