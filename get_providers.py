@@ -85,7 +85,7 @@ result = list(set(x for x in unique_urls if not any(substring in x for substring
                                                      'xjai.cc', 'chatgpt.kiask.xyz', 'aichat.gogpt.site', 'chatgpt.bybyte.cn', 'vvanglro.eu.org',
                                                      'gpt.xeasy.me', 'bettergpt.chat', 'chat.aisoftworks.com', 'hashnode.com', 'www.typingmind.com',
                                                      'www.magicaibot.com', 'chat-shared2.zhile.io', 'home.cutim.top', 'ailink.icu', 'bard.google.com',
-                                                     'discord', 'x.com', 't.me', 'file', 'static'])))
+                                                     'discord', 'x.com', 't.me', 'file', 'static', 'slack'])))
 
 with open('providers.txt', 'w') as file:
     file.write('\n'.join(result))
