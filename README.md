@@ -5,12 +5,16 @@
 [![](https://img.shields.io/github/forks/Zalexanninev15/ai-for-all.svg)](https://github.com/Zalexanninev15/ai-for-all/network/members)
 [![](https://img.shields.io/github/issues/Zalexanninev15/ai-for-all.svg)](https://github.com/Zalexanninev15/ai-for-all/issues?q=is%3Aopen+is%3Aissue)
 [![](https://img.shields.io/github/issues-closed/Zalexanninev15/ai-for-all.svg)](https://github.com/Zalexanninev15/ai-for-all/issues?q=is%3Aissue+is%3Aclosed)
+[![](https://img.shields.io/badge/Topic_in_Telegram_group-26A5E4.svg?logo=telegram)](https://t.me/z15_community/17)
 [![](https://img.shields.io/badge/license-GPLv3-ligthgreen.svg)](LICENSE)
 [![](https://img.shields.io/badge/Donate-FFDD00.svg?logo=buymeacoffee&logoColor=black)](https://zalexanninev15-donate.pfm.live/)
 
 ## Описание
 
 Провайдеры ChatGPT для бесплатного использования, преимущественно без регистрации и с +/- адекватной поддержкой русского языка, собираю сам. Имеется автоматизированный сбор провайдеров с некоторых GitHub репозитриев. Сайт сделал для себя и упрощения жизни людям при отсутствии возможности использования ChatGPT из-за... кхм.. Р\*ского д\*зма в плане ограничений, провайдеров, слежки и прочего. [Подробнее о создании проекта и релиз (Telegram)](https://t.me/Zalexanninev15_News/1172)
+
+### 🔥 24.01.24 НОВИНКА!!! Официальная тема по Искусственному интеллекту (ИИ/AI) в группе Telegram
+[![](https://img.shields.io/badge/Вступить-26A5E4.svg?logo=telegram)](https://t.me/z15_community/17)
 
 ## Как использовать?
 
