@@ -109,9 +109,9 @@
 <body>
   <script>
     function parseUA() {
-    var u = navigator.userAgent;
-    var u2 = navigator.userAgent.toLowerCase();
-    return {
+      var u = navigator.userAgent;
+      var u2 = navigator.userAgent.toLowerCase();
+      return {
         trident: u.indexOf('Trident') > -1,
         presto: u.indexOf('Presto') > -1,
         webKit: u.indexOf('AppleWebKit') > -1,
@@ -125,7 +125,7 @@
         iosv: u.substr(u.indexOf('iPhone OS') + 9, 3),
         weixin: u2.match(/MicroMessenger/i) == "micromessenger",
         ali: u.indexOf('AliApp') > -1,
-    };
+      };
     }
     var ua = parseUA();
     if (ua.mobile) {
@@ -141,11 +141,11 @@
             viewBox="0 0 16 16">
             <path
               d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+          </svg>
         </a>
-        </svg>
         <br>
         <just_text style="font-size: 20px">Версия
-          от 15 января (v2.3b)</just_text><br>
+          от 25 января (v2.3c)</just_text><br>
         <just_text style="font-size: 15px">Автор сайта <a href="https://github.com/Zalexanninev15"
             style="text-decoration: none">@Zalexanninev15</a> | <a
             href="https://github.com/Zalexanninev15/AI-ChatGPT/blob/main/LICENSE" style="text-decoration: none">GPL-3.0
@@ -388,13 +388,6 @@
             <td>3.5</td>
           </tr>
           <tr>
-            <td style="text-align: left">ChatGPT Demo Free</td>
-            <td style="text-align: center">
-              <a href="https://chat.chatgptdemo.net/" target="_blank">Перейти</a>
-            </td>
-            <td>3.5</td>
-          </tr>
-          <tr>
             <td style="text-align: left">
               ЧатGPT Online (<em>много доп. функций!!!</em>)
             </td>
@@ -407,6 +400,42 @@
             <td style="text-align: left">ChatGPT AI</td>
             <td>
               <a href="https://chatgpt.ai/" target="_blank">Перейти</a>
+            </td>
+            <td>3.5</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">Blackbox (нужна авторизация)</td>
+            <td>
+              <a href="https://www.blackbox.ai/" target="_blank">Перейти</a>
+            </td>
+            <td>BLACKBOX.AI</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">DeepSeek (нужна авторизация),<br>очень хорош в коде</td>
+            <td>
+              <a href="https://chat.deepseek.com/coder" target="_blank">Перейти</a>
+            </td>
+            <td>?</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">OpenCopilot (нужна авторизация),<br>очень хорош в коде, можно создавать своих
+              ботов</td>
+            <td>
+              <a href="https://cloud.opencopilot.so/" target="_blank">Перейти</a>
+            </td>
+            <td>?</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">phind, хорош в коде, может искать в Интернете</td>
+            <td>
+              <a href="https://www.phind.com/search?home=true" target="_blank">Перейти</a>
+            </td>
+            <td>Phind Model<br>(возможно 3.5)</td>
+          </tr>
+          <tr>
+            <td style="text-align: left">ChatGPT Demo Free</td>
+            <td style="text-align: center">
+              <a href="https://chat.chatgptdemo.net/" target="_blank">Перейти</a>
             </td>
             <td>3.5</td>
           </tr>
@@ -447,7 +476,7 @@
             <td>
               <a href="https://www.perplexity.ai/" target="_blank">Перейти</a>
             </td>
-            <td>Perplexity AI</td>
+            <td>Perplexity AI/4</td>
           </tr>
           <tr>
             <td style="text-align: left">Вопросы по PDF</td>
@@ -487,6 +516,7 @@
           </tr>
         </tbody>
       </table>
+      <script src="https://cloud.opencopilot.so/pilot.js"></script>
       <h3>Telegram провайдеры</h3>
       <table>
         <thead>
@@ -776,11 +806,12 @@
         Получить больше провайдеров ChatGPT...
       </div>
       <div id="tableContainer" style="display: none">
-        <h3 style="margin-top: 25px;">Список провайдеров с GitHub<p style="font-size: 12px;">🔃 Обновляется автоматически раз в 2 дня 🔃</p></h3>
+        <h3 style="margin-top: 25px;">Список провайдеров с GitHub<p style="font-size: 12px;">🔃 Обновляется
+            автоматически раз в 2 дня 🔃</p>
+        </h3>
         <table id="botTable">
           <thead>
             <tr>
-              <th>Сервис</th>
               <th>Сервис</th>
               <th>Сервис</th>
               <th>Сервис</th>
@@ -829,10 +860,10 @@
             .querySelector("tbody");
           let row;
           for (let i = 0; i < lines.length; i++) {
-            if (i % 4 === 0) {
+            if (i % 3 === 0) {
               row = botTable.insertRow(-1);
             }
-            const cell = row.insertCell(i % 4);
+            const cell = row.insertCell(i % 3);
             const link = lines[i].trim();
             const linkElement = document.createElement("a");
             linkElement.href = link;
