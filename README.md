@@ -7,7 +7,7 @@
 [![](https://img.shields.io/github/issues-closed/Zalexanninev15/ai-for-all.svg)](https://github.com/Zalexanninev15/ai-for-all/issues?q=is%3Aissue+is%3Aclosed)
 [![](https://img.shields.io/badge/Topic_in_Telegram_group-26A5E4.svg?logo=telegram)](https://t.me/z15_community/17)
 [![](https://img.shields.io/badge/license-GPLv3-ligthgreen.svg)](LICENSE)
-[![](https://img.shields.io/badge/Donate-FFDD00.svg?logo=buymeacoffee&logoColor=black)](https://zalexanninev15-donate.pfm.live/)
+[![](https://img.shields.io/badge/Donate-FFDD00.svg?logo=buymeacoffee&logoColor=black)](https://teletype.in/@zalexanninev15/donate)
 
 ## Описание
 
