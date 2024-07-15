@@ -59,10 +59,10 @@ for url in gpt_list:
             url1 = url1.strip('"')
             if url1 not in unique_urls:
                 if first:
-                    unique_urls.append(url1)
+                    unique_urls.append(url1.replace(")", ''))
                     first = False
                 else:
-                    unique_urls.append(url1)
+                    unique_urls.append(url1.replace(")", ''))
 
     except Exception as e:
         print(f'Error processing URL: {str(e)}')
@@ -70,22 +70,21 @@ for url in gpt_list:
     os.remove(file_name)
 
 result = list(set(x for x in unique_urls if not any(substring in x for substring in
-                                                    ['huggingface.co/chat', 'chat.kunshanyuxin.com', 'you.com', 'bing', 'openai', 'theb',
-                                                     'chad', 'getgpt', 'geekgpt', 'deepai', 'chatgpt.ch', 'chatgpt-free.ai', 'favicon',
-                                                     'onlinegpt.org', 'chataigpt.org', 'betsim', 'chat.gptonline.ai', 'perplexity.ai',
-                                                     'talkai', 'chatgpt.org', 'cgs.skybyte.me', 'www.chatbase.co', 'www.aitianhu.com',
+                                                    ['huggingface.co/chat', 'chat.kunshanyuxin.com', 'bing', 'openai', '.ico', '.webp',
+                                                     'getgpt', 'geekgpt', 'deepai', 'chatgpt.ch', 'chatgpt-free.ai', 'favicon',
+                                                     'chatgpt.org', 'cgs.skybyte.me', 'www.chatbase.co', 'www.aitianhu.com',
                                                      'chatgpt.ai', 'powerchat.', 'p.aifree.site', 'gptgo.ai', 'ai.heptax.com', 'carrot',
-                                                     'hteyun.com', 'chat.pinkfong.cn', 'c.newstop.uk', 'ai.zenglingkun.cn', 'poe', 'png', 'jpg',
-                                                     'nav4ai.net', 'coffeecat', 'chat.51buygpt.com', 'ai.mcbbs.gq', 'gptdidi.com', 'github',
+                                                     'hteyun.com', 'chat.pinkfong.cn', 'c.newstop.uk', 'ai.zenglingkun.cn', '.png', '.jpg',
+                                                     'nav4ai.net', 'coffeecat', 'chat.51buygpt.com', 'ai.mcbbs.gq', 'gptdidi.com', 'github', 'donate',
                                                      'chat.leadscloud.xyz', 'g01.plitun.com', 'www.chatbotui.com', 'freegpt.dingtoucake.xyz'
                                                      'academic.aiearth.dev', 'chat2.xeasy.me', 'www.chatfree.cc', 'free.netfly.top', 'wiki',
-                                                     'www.devgpt.com', 'a.aiask.me', 'mirrorchat.extkj.cn', 'chatyou.lovebaby.today', 'svg',
+                                                     'www.devgpt.com', 'a.aiask.me', 'mirrorchat.extkj.cn', 'chatyou.lovebaby.today', '.svg',
                                                      'chat1.manongzyg.one', 'chat.iwoso.co', 'freegpts1.aifree.site', 'suspended-website.com',
                                                      'nb.aitom.cc', '94gpt.com', 'www.chatgptunli.com', 'chat.newstop.asia', 'ai.azstudio.top',
                                                      'xjai.cc', 'chatgpt.kiask.xyz', 'aichat.gogpt.site', 'chatgpt.bybyte.cn', 'vvanglro.eu.org',
                                                      'gpt.xeasy.me', 'bettergpt.chat', 'chat.aisoftworks.com', 'hashnode.com', 'www.typingmind.com',
                                                      'www.magicaibot.com', 'chat-shared2.zhile.io', 'home.cutim.top', 'ailink.icu', 'bard.google.com',
-                                                     'discord', 'x.com', 't.me', 'file', 'static', 'slack', 'deepseek', 'blackbox', 'opencopilot',
+                                                     'discord', 'x.com', 't.me', 'file', 'static', 'slack', 'opencopilot',
                                                      'phind', 'deepinfra', 'apps.apple.com', 'play.google.com'])))
 
 with open('providers.txt', 'w') as file:
