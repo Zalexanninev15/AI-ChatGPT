@@ -70,14 +70,14 @@ for url in gpt_list:
     os.remove(file_name)
 
 result = list(set(x for x in unique_urls if not any(substring in x for substring in
-                                                    ['huggingface.co/chat', 'chat.kunshanyuxin.com', 'bing', 'openai', '.ico', '.webp',
+                                                    ['huggingface.co/chat', 'star-history', 'docs', 'api', 'bing', 'openai', '.ico', '.webp',
                                                      'getgpt', 'geekgpt', 'deepai', 'chatgpt.ch', 'chatgpt-free.ai', 'favicon',
                                                      'chatgpt.org', 'cgs.skybyte.me', 'www.chatbase.co', 'www.aitianhu.com',
                                                      'chatgpt.ai', 'powerchat.', 'p.aifree.site', 'gptgo.ai', 'ai.heptax.com', 'carrot',
                                                      'hteyun.com', 'chat.pinkfong.cn', 'c.newstop.uk', 'ai.zenglingkun.cn', '.png', '.jpg',
                                                      'nav4ai.net', 'coffeecat', 'chat.51buygpt.com', 'ai.mcbbs.gq', 'gptdidi.com', 'github', 'donate',
                                                      'chat.leadscloud.xyz', 'g01.plitun.com', 'www.chatbotui.com', 'freegpt.dingtoucake.xyz'
-                                                     'academic.aiearth.dev', 'chat2.xeasy.me', 'www.chatfree.cc', 'free.netfly.top', 'wiki',
+                                                     'academic.aiearth.dev', 'chat2.xeasy.me', 'www.chatfree.cc', 'wiki',
                                                      'www.devgpt.com', 'a.aiask.me', 'mirrorchat.extkj.cn', 'chatyou.lovebaby.today', '.svg',
                                                      'chat1.manongzyg.one', 'chat.iwoso.co', 'freegpts1.aifree.site', 'suspended-website.com',
                                                      'nb.aitom.cc', '94gpt.com', 'www.chatgptunli.com', 'chat.newstop.asia', 'ai.azstudio.top',
