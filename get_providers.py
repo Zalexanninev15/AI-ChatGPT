@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Script to get the current list of providers
-# Copyright (C) 2023-2024 Zalexanninev15
+# Copyright (C) 2023-2025 Zalexanninev15
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
